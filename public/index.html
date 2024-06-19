@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tickets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Sistema de Gestión de Tickets</h1>
+        <div>
+            <button id="solicitar-ticket">Solicitar Ticket</button>
+            <button id="atender-ticket">Atender Ticket</button>
+        </div>
+        <div id="ticket-actual"></div>
+        <div id="ultimos-tickets"></div>
+        <div id="tickets-atendidos"></div>
+    </div>
+    <audio id="sonido-ticket" src="ticket-sound.wav"></audio>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
